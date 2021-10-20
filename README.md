@@ -4,6 +4,12 @@
 
 This is a plugin for [BetterDiscord](https://betterdiscord.app/). It lets you bypass discord chat filter bots.
 
+[![version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://shields.io/)
+[![made-with-javascript](https://img.shields.io/badge/Made%20with-JavaScript-1f425f.svg)](https://www.javascript.com)
+[![license: mit](https://img.shields.io/badge/license-MIT-yellow.svg)](https://choosealicense.com/licenses/mit/)
+
+
+
 ### Disclaimer
 **I AM IN NO WAY RESPONSIBLE FOR ANYTHING YOU DO WITH THIS PLUGIN.** I made it because someone asked me to make it. Whatever harm you cause with this is ***not my problem***. Got banned for spamming the n-word in #general? ***NOT MY PROBLEM!*** I think you know where I am going with this...
 
