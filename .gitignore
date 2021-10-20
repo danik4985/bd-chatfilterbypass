@@ -1,0 +1,9 @@
+# I installed @types/node because the code I used for reference for some things needed them
+node_modules/
+package.json
+package-lock.json
+
+# The code I used to see how to use ZLib patcher
+# sadly, I can't show you what that is because it is the most disgusting piece of code you can even imagine
+# and you would commit suicide after seeing it
+skid.ts
