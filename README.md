@@ -19,7 +19,9 @@ This is a plugin for [BetterDiscord](https://betterdiscord.app/). It lets you by
 ## How it works
 This plugin has replaces letters in your messages with characters that look identical, but are actually different.
 For example, it replaces regular `O` (Unicode *004F*) with Cyrilic capital letter `О` (Unicode *041E*), thanks to this, many discord bots don't match your swear words and let you use them.
+
 In case that isn't working on your server, you can also toggle on blatant replacement, which replaces some characters with characters that look similiar, such as `O` => `0`.
+
 And guess what, thats not all! You can also enable zero width space inserting, so that your words are even less likely to be filtered. Just note that this adds one character to your message per <5 letters word and 3 characters to your message for words with 5 or more letters!
 
 ## Installation
@@ -30,7 +32,9 @@ You can download this plugin from the [releases tab](https://github.com/danik498
 ![The configuration menu](https://cdn.discordapp.com/attachments/733703994018496564/900406852746100776/Screenshot_from_2021-10-20_17-34-51.png)
 
 You can configure this plugin by finding it in the plugin menu and clicking the settings icon, just like you configure any other plugin.
+
 The first free configuration options were already explained in [How it works](#how-it-works), so let me just explain the last one: Prefix.
+
 This option lets you set a prefix that marks that you want to patch the message - let me explain:
 If you set your prefix option to `--`, the message will need to start with `--` to be patched. This means that if your message doesnt start with `--`, it won't be modified. This prefix will of course be removed, so if you send
 ```
