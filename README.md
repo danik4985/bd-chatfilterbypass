@@ -23,7 +23,7 @@ In case that isn't working on your server, you can also toggle on blatant replac
 And guess what, thats not all! You can also enable zero width space inserting, so that your words are even less likely to be filtered. Just note that this adds one character to your message per <5 letters word and 3 characters to your message for words with 5 or more letters!
 
 ## Installation
-You can download this plugin from the releases tab of this github repo. Then insert it into your BD plugins folder and enable it.
+You can download this plugin from the [releases tab](https://github.com/danik4985/bd-chatfilterbypass/releases) of this github repo. Then insert it into your BD plugins folder and enable it.
 
 ## Configuration
 
