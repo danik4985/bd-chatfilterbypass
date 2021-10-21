@@ -7,6 +7,15 @@
 // is a betterdiscord plugin 
 // TODO: Offer self-install
 
+if (require.main === module) {
+
+	// This file was run directly (node chatfilterbypass.plugin.js)
+	// TODO: offer self install
+	console.log('This is a BetterDiscord plugin and cannot be ran directly')
+	process.exit(1)
+	
+}
+
 /**
  * @name ChatFilterBypass
  * @version 1.0.0
