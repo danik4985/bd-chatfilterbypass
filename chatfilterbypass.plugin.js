@@ -1,19 +1,3 @@
-// 2>/dev/null	; echo "This is a BetterDiscord plugin"
-// 2>/dev/null	; exit 1
-
-// If run as ./chatfilterbypass.plugin.js or bash chatfilterbypass.plugin.js, notify the person that this
-// is a betterdiscord plugin 
-// TODO: Offer self-install
-
-if (require.main === module) {
-
-	// This file was run directly (node chatfilterbypass.plugin.js)
-	// TODO: offer self install
-	console.log('This is a BetterDiscord plugin and cannot be ran directly')
-	process.exit(1)
-	
-}
-
 /**
  * @name ChatFilterBypass
  * @version 1.0.0
@@ -22,12 +6,7 @@ if (require.main === module) {
  */
 class ChatFilterBypass {
 
-	#config = {
-		ghost: true,
-		blatant: false,
-		addSpace: false,
-		prefix: ''
-	}
+	#config = null
 
 	#saveConfig() {
 		BdApi.saveData('chatfilterbypass', 'config', JSON.stringify(this.#config))
@@ -39,6 +18,7 @@ class ChatFilterBypass {
 			ghost: true,
 			blatant: false,
 			addSpace: false,
+			firstTimeLaunched: true,
 			prefix: ''
 		}
 
@@ -88,6 +68,18 @@ class ChatFilterBypass {
 				icon: true,
 				timeout: 3500
 			})
+
+			if (this.#config.firstTimeLaunched) {
+				this.#config.firstTimeLaunched = false
+
+				BdApi.alert(
+					'Thank you for using ChatFilterBypass',
+					`This is your first time using ChatFilterBypass!<br><br>
+					Check out this project's <b><a href="https://github.com/danik4985/bd-chatfilterbypass" target="_blank">GitHub repo</a></b> <br>
+					You can find info and help there. Also, if you like this plugin and want to support its development, 
+					consider staring that repo please.`
+				)
+			}
 		}
 	}
 
