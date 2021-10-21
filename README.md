@@ -55,6 +55,7 @@ penis
 If you need support, add me on discord: `danik#4985`
 
 ## Roadmap
+- [ ] Fix zero-width-space issues
 - [ ] Extend the filters
 - [ ] Make it possible to send a message starting with the prefix without patching it.
 - [ ] Make it more customizable
