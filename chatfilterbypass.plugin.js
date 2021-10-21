@@ -107,12 +107,20 @@ class ChatFilterBypass {
 			I: 'І',
 			i: 'і',
 			O: 'О',
-			o: 'о'
+			o: 'о',
+			E: 'Ε',
+			A: 'Α',
+			B: 'Β',
+			P: 'Ρ',
+			M: 'Μ',
+			N: 'Ν'
 		}
 
 		const FILTERS_BLATANT = {
 			i: '1',
-			o: '0'
+			o: '0',
+			p: 'ρ',
+			e: '℮'
 			// WIP btw
 			// someone contribute
 			// pls
