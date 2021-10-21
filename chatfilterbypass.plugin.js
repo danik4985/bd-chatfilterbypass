@@ -93,29 +93,41 @@ class ChatFilterBypass {
 		const ZWS = '\u{200B}'
 
 		const FILTERS_GHOST = {
+			A: 'Α',
+			a: 'а',
+			B: 'Β',
 			C: 'С',
 			c: 'с',
-			B: 'В',
+			E: 'Ε',
+			e: 'е',
+			h: 'һ',
+			I: 'І',
+			i: 'і',
+			j: 'ј',
+			l: 'ӏ',
+			M: 'Μ',
+			N: 'Ν',
+			O: 'О',
+			o: 'о',
+			P: 'Ρ',
+			p: 'р',
 			T: 'Т',
 			X: 'Х',
 			x: 'х',
-			I: 'І',
-			i: 'і',
-			O: 'О',
-			o: 'о',
-			E: 'Ε',
-			A: 'Α',
-			B: 'Β',
-			P: 'Ρ',
-			M: 'Μ',
-			N: 'Ν'
+			y: 'у'
 		}
 
 		const FILTERS_BLATANT = {
+			d: 'ԁ', // Looked different in terminal wtf
+			e: '℮',
 			i: '1',
+			k: 'κ',
+			n: 'ո',
 			o: '0',
 			p: 'ρ',
-			e: '℮'
+			u: 'ս',
+			v: 'ν',
+			z: 'ʐ'
 			// WIP btw
 			// someone contribute
 			// pls
