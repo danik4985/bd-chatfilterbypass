@@ -1,5 +1,3 @@
-#!/bin/bash
-
 // 2>/dev/null	; echo "This is a BetterDiscord plugin"
 // 2>/dev/null	; exit 1
 
