@@ -28,7 +28,7 @@ For example, it replaces regular `O` (Unicode *004F*) with Cyrilic capital lette
 
 In case that isn't working on your server, you can also toggle on blatant replacement, which replaces some characters with characters that look similiar, such as `O` => `0`.
 
-And guess what, thats not all! You can also enable zero width space inserting, so that your words are even less likely to be filtered. Just note that this adds one character to your message per <5 letters word and 3 characters to your message for words with 5 or more letters!
+And guess what, thats not all! You can also enable zero width space inserting, so that your words are even less likely to be filtered. Just note that this adds one character to your message per <5 letters word and 2 characters to your message for words with 5 or more letters!
 
 ## Installation
 You can download this plugin from the [releases tab](https://github.com/danik4985/bd-chatfilterbypass/releases) of this github repo. Then insert it into your BD plugins folder and enable it.
@@ -55,7 +55,7 @@ penis
 If you need support, add me on discord: `danik#4985`
 
 ## Roadmap
-- [ ] Fix zero-width-space issues
+- [x] Fix zero-width-space issues
 - [ ] Extend the filters
 - [ ] Make it possible to send a message starting with the prefix without patching it.
 - [ ] Make it more customizable

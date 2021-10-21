@@ -145,7 +145,11 @@ class ChatFilterBypass {
 		if (this.#config.blatant) for (const i in FILTERS_BLATANT) content = content.split(i).join(FILTERS_BLATANT[i])
 		if (this.#config.addSpace) content = content
 				.split(' ')
-				.map(i => i.length < 5 ? i[0] + ZWS + i.slice(1) : i[0] + ZWS + i.slice(1, -1) + ZWS + i[i.length - 1])
+				.map(
+					i => /^[a-zA-Z0-9]+$/gm.test(i)
+						? i.length < 5 ? i[0] + ZWS + i.slice(1) : i[0] + ZWS + i.slice(1, -1) + ZWS + i[i.length - 1]
+						: i
+				)
 				.join(' ')
 
 		for (const i in emojiMap) content = content.split(i).join(emojiMap[i])
@@ -186,7 +190,7 @@ class ChatFilterBypass {
 			),
 			new ZLibrary.Settings.Switch(
 				'Add zero width spaces',
-				'Add zero width spaces to words? This will bypass even more advanced filters, but adds extra 1-3 characters per word.',
+				'Add zero width spaces to words? This will bypass even more advanced filters, but adds extra 1 or 2 characters per word.',
 				this.#config.addSpace,
 				(v) => {
 					this.#config.addSpace = v
