@@ -1,3 +1,12 @@
+#!/bin/bash
+
+// 2>/dev/null	; echo "This is a BetterDiscord plugin"
+// 2>/dev/null	; exit 1
+
+// If run as ./chatfilterbypass.plugin.js or bash chatfilterbypass.plugin.js, notify the person that this
+// is a betterdiscord plugin 
+// TODO: Offer self-install
+
 /**
  * @name ChatFilterBypass
  * @version 1.0.0
