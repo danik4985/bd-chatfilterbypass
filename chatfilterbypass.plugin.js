@@ -18,7 +18,6 @@ class ChatFilterBypass {
 			ghost: true,
 			blatant: false,
 			addSpace: false,
-			firstTimeLaunched: true,
 			prefix: ''
 		}
 
@@ -68,18 +67,6 @@ class ChatFilterBypass {
 				icon: true,
 				timeout: 3500
 			})
-
-			if (this.#config.firstTimeLaunched) {
-				this.#config.firstTimeLaunched = false
-
-				BdApi.alert(
-					'Thank you for using ChatFilterBypass',
-					`This is your first time using ChatFilterBypass!<br><br>
-					Check out this project's <b><a href="https://github.com/danik4985/bd-chatfilterbypass" target="_blank">GitHub repo</a></b> <br>
-					You can find info and help there. Also, if you like this plugin and want to support its development, 
-					consider staring that repo please.`
-				)
-			}
 		}
 	}
 
