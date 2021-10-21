@@ -1,6 +1,6 @@
 /**
  * @name ChatFilterBypass
- * @version 1.0.0
+ * @version 1.1.0
  * @description Automatically replace cerain letters with characters that look identical but are not to bypass chat filter bots.
  * @author danik#4985
  */
